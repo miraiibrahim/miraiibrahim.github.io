@@ -74,15 +74,25 @@ body {
 
 nav {
   position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color:  #FFF8F5;
+
+
+  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
 }
+#name-logo {
+  width: 100px;
+  position: absolute;
+}
+
+#logo { 
+  cursor: pointer;
+transition: transform 0.15s ease-in;}
 
 nav .nav-container {
   display: flex;
@@ -232,9 +242,67 @@ nav ul li {
 
 }
 
+
 .project-card:hover{
   box-shadow: 1px 8px 20px grey;
 
+}
+
+.main .project-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.overview-section p {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #333;
+  line-height: 40px;
+  text-align: justify;
+}
+
+.about-container{
+  position: relative;
+  text-align: center;
+}
+
+.about .about-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+.about {
+  margin: auto;
+  width: 50%;
+  max-width: 2000px;
+  margin-top: 300px;
+  position: relative;
+}
+
+.about .about-container p {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #333;
+  line-height: 40px;
+  width: 700px;
+}
+
+.about .about-container h1 {
+font-size: 50px;
+color: #333;
+margin-bottom: 30px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -285,15 +353,15 @@ footer {
   text-align: center;
 }
 
-.row #column1,
-.row #column2{
-        float: left;
-        width: 600px;
-        padding: 80px 40px 80px 40px;
-}
+
 
 .column-title h3{
   font-weight: 600;
+}
+main h1 {
+  font-weight: 400;
+  font-size: 50px;
+  margin-top: 50px;
 }
 
 li{
@@ -317,14 +385,23 @@ main .keywords{
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 12px;
-margin-top: 25px;
+margin-top: 10px;
 color: rgba(51, 51, 51, 0.74);
 text-transform: uppercase;
 }
 main .img-container {
-  height: 700px;
+  height: 600px;
   display: flex;
   justify-content: center;
+}
+main {
+  display: block;
+}
+main .project-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
 }
 main .project-info-container{
 margin-top: 100px;
@@ -344,8 +421,18 @@ main .project-info-container .overview-section .grid {
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
+  text-align: justify;
 }
 
 main .project-info-container .overview-section .grid .section {
   max-width: 400px;
+}
+main .project-info-container .overview-section .grid p, .tools-list li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  line-height: 30px;
+  max-width: 500px;
+  margin-top: 0px;
 }
