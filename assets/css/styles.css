@@ -22,7 +22,7 @@ body{
   --bolder-font: 900;
   --bg-color: #fcfcfc;
   --primary-color: #000;
-  --secondary-color: #7659C5;
+  --secondary-color: #800080;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -30,11 +30,11 @@ body{
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
-.h1
 
 html {
   scroll-behavior: smooth;
 }
+
 
 /* CSS Resets */
 * {
@@ -44,14 +44,20 @@ html {
   /* border: 2px solid red; */
 }
 
+
 ul {
   list-style-type: none;
 }
 
-.h2 {
-  margin: 0;
-  padding: 0;
+.hero h1 {
+    font-family: 'SofiaPro-Bold', 'Helvetica', 'Roboto';
+    text-align: justify;
+    font-size: 50px;
+    line-height: 80px;
+    margin-right: 50px;
+    color: #333;
 }
+
 
 .h3{
   margin: 0;
@@ -78,12 +84,27 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color:  #FFF8F5;
-
-
-  margin-top: 20px;
+  margin-top: 10px;
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+} 
+#nav-menu{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 300px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+#nav-menu li{
+  display: inline;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #333;
+  transition: transform 0.15s ease;
+  position: relative;
 }
 #name-logo {
   width: 100px;
@@ -97,7 +118,7 @@ transition: transform 0.15s ease-in;}
 nav .nav-container {
   display: flex;
   justify-content: space-between;
-  margin: 30px 70px;
+  margin: 10px 70px;
 }
 nav h1 {
   color: var(--primary-color);
@@ -139,6 +160,13 @@ nav ul li {
   max-width: 68.75rem;
   margin: auto;
   margin-bottom:100px;
+}
+
+.hero h2{
+  text-align: justify;
+  color: #333;
+    margin-bottom: 5px;
+
 }
 
 .hero img { 
@@ -208,12 +236,13 @@ nav ul li {
 }
 
 .projects-container {
-  padding: 0.4rem;
-
+  padding-left: 30px;
+  padding-right:30px;
 }
 
 .projects-title {
   margin-bottom: auto;
+  margin-top: 10px;
 }
 .project-details {
   margin-bottom: var(--bottom-margin);
@@ -223,8 +252,8 @@ nav ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 60px;
-
+  padding: 15px;
+  margin: 0 15px 0 15px;
 }
 
 .project-card {
@@ -296,6 +325,14 @@ nav ul li {
 font-size: 50px;
 color: #333;
 margin-bottom: 30px;
+text-align: center;
+}
+
+.projects-title {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .center {
@@ -303,6 +340,7 @@ margin-bottom: 30px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: justify;
 }
 
 
@@ -323,9 +361,40 @@ margin-bottom: 30px;
 
 footer {
   background-color: #FFF8F5;
-  padding: 1.25rem;
+  padding: 10px;
   text-align: center;
-  margin: 2rem 0 0;
+  margin-top: 50px;
+  font-weight: 300;
+}
+footer .footer-container{
+  display: flex;
+    flex-direction: column;
+}
+
+footer .footer-container .footer-sections{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  position: relative;  
+}
+footer .footer-container .footer-sections .right-section {
+  text-align: center;
+  justify-content: left;
+}
+footer .footer-container .footer-sections .right-section h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  text-align: right;
+  font-size: 35px;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.fa-brands, .fab {
+  font-weight: 400;
 }
 
 .wineapp{
@@ -335,24 +404,6 @@ footer {
   margin: auto;
   margin-top: 2px;
 }
-
-/*  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  max-width: 68.75rem;
-  margin: auto;
-  margin-bottom:100px;*/
-
-  
-#section2{
-  overflow: hidden;
-  margin-top: 5em;
-  padding-top: 1em;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
 
 
 .column-title h3{
@@ -404,7 +455,7 @@ main .project-info {
   
 }
 main .project-info-container{
-margin-top: 100px;
+margin-top: 90px;
 min-width: 1200px;
 max-width: 1200px;
 }
@@ -436,3 +487,84 @@ main .project-info-container .overview-section .grid p, .tools-list li {
   max-width: 500px;
   margin-top: 0px;
 }
+
+main .project-info-container .design-process .design-process-headline {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: #333;
+  text-transform: lowercase;
+  margin-top: 80px;
+}
+
+main .project-info-container .design-process .design-process-subheadline {
+  font-size: 20px;
+  /* color: #333; */
+  color: rgba(51, 51, 51, 0.74);
+  margin-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.74);
+  
+}
+
+main .project-info-container .design-process .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  margin-top: 70px;
+  line-height: 30px;
+  text-align: justify;
+
+}
+
+main .project-info-container .design-process .grid h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.74);
+}
+
+main .project-info-container .design-process .final-concept {
+  display: flex;
+  justify-content: space-around;
+}
+main .project-info-container .design-process .final-concept img {
+width: 1200px;
+}
+
+.embr{
+  width: 500px;
+}
+
+.flamman {
+  width: 500px;
+}
+
+.video-container{
+  width: 1100px;
+  height: 480px;
+  display: flex; 
+  justify-content: center;
+  margin-top: 20px;
+}
+
+main .project-info-container .design-process .ideation{
+  display: flex;
+  justify-content: space-around;
+}
+
+.ideation img {
+  width: 1300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.ideation-section p{
+  text-align: justify;
+}
+
+
+
