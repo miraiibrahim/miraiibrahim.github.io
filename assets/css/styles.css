@@ -79,15 +79,13 @@ body {
 }
 
 nav {
-  position: sticky;
+  position: fixed;
   display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 3.5rem;
   background-color:  #FFF8F5;
-  margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1;
+  /*border-bottom: #333 solid 1px;*/
 } 
 #nav-menu{
   list-style: none;
@@ -106,6 +104,8 @@ nav {
   transition: transform 0.15s ease;
   position: relative;
 }
+
+
 #name-logo {
   width: 100px;
   position: absolute;
@@ -244,6 +244,13 @@ nav ul li {
   margin-bottom: auto;
   margin-top: 10px;
 }
+
+.project-title{
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
 .project-details {
   margin-bottom: var(--bottom-margin);
 }
@@ -267,7 +274,7 @@ nav ul li {
   display: flex;
   flex-direction: column;   
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
 }
 
@@ -378,6 +385,8 @@ footer .footer-container .footer-sections{
   padding-right: 100px;
   padding-top: 50px;
   position: relative;  
+  justify-content: center;
+  margin-bottom: 64px;
 }
 footer .footer-container .footer-sections .right-section {
   text-align: center;
@@ -445,6 +454,90 @@ main .img-container {
   display: flex;
   justify-content: center;
 }
+
+.img-container-for-dev {
+  width: 1300px;
+  display:flex;
+  justify-content:left;
+  margin-top: 30px;
+  height: 200;
+}
+
+main .project-info-container .design-process-section .ideation-section {
+  display: flex;
+  justify-content: space-around;
+}
+main .project-info-container .design-process p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+main .project-info-container .design-process .process-pictures {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+main .project-info-container .design-process .process-pictures img {
+  width: 1100px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+main .project-info-container .design-process .before-after {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+main .project-info-container .design-process .before-after img {
+    width: 900px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+main .project-info-container .design-process .final-concept {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+/*
+main .project-info-container .design-process .final-concept img {
+    width: 1000px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}*/
+
+main .project-info-container .design-process .final-concept .wine-container img{
+  width: 1000px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+main .project-info-container .design-process .final-concept .flyer-container img{
+  width: 550px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+
+.flyer-container img {
+  width: 50%;
+  height:50%
+}
+.evolved {
+  height: 500px;
+  margin-top: 30px;
+}
+
+.img-container-for-dev img {
+  width: 1300px;
+  height: 200px;
+  display: flex;
+  mix-blend-mode: multiply;
+}
+
 main {
   display: block;
 }
@@ -497,6 +590,7 @@ main .project-info-container .design-process .design-process-headline {
   margin-top: 80px;
 }
 
+
 main .project-info-container .design-process .design-process-subheadline {
   font-size: 20px;
   /* color: #333; */
@@ -526,13 +620,6 @@ main .project-info-container .design-process .grid h6 {
   color: rgba(51, 51, 51, 0.74);
 }
 
-main .project-info-container .design-process .final-concept {
-  display: flex;
-  justify-content: space-around;
-}
-main .project-info-container .design-process .final-concept img {
-width: 1200px;
-}
 
 .embr{
   width: 500px;
@@ -543,11 +630,12 @@ width: 1200px;
 }
 
 .video-container{
-  width: 1100px;
+  width: 1200px;
   height: 480px;
   display: flex; 
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 50px;   
 }
 
 main .project-info-container .design-process .ideation{
@@ -564,6 +652,11 @@ main .project-info-container .design-process .ideation{
 
 .ideation-section p{
   text-align: justify;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #333;
+  line-height: 40px;
 }
 
 
